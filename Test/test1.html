@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src ="../js/vue.js"></script>
+<body>
+<div class="app">{{message}}
+<h1>{{name}}</h1>
+    <ul>
+        <li v-for="item in lists">{{item}}</li>
+    </ul>
+</div>
+<script>
+    //let变量   const常量
+    const app=new Vue({
+        el:".app",//用于要挂载的元素
+        data:{//定义数据
+            message:"Vue的第一个列子",
+            name:"lierlin",
+            lists:["lierlin","lidalin","lichunxia","lidegong"]
+        }
+    })
+</script>
+</body>
+</html>
